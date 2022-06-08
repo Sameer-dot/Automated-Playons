@@ -1,7 +1,7 @@
 {
-  "name": "mern-tutorial",
+  "name": "automated-playon",
   "version": "1.0.0",
-  "description": "Goalsetter app for youtube tutorial",
+  "description": "Booking app",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Brad Traversy",
+  "author": "Sameer",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -26,5 +26,8 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "v16.13.1"
   }
 }
