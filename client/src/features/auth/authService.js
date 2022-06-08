@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 const API_URL = 'http://localhost:5000/';
-const H_URI = 'https://automatedplayonsapp.herokuapp.com/';
+const H_URI = 'https://automatedplayonsapp.herokuapp.com/api/users/';
 
 // Register user
 const register = async (userData) => {
-	const response = await axios.post(H_URI + 'api/users/register', userData);
+	const response = await axios.post(H_URI + 'register', userData);
 
 	if (response.data) {
 		localStorage.setItem('user', JSON.stringify(response.data));
@@ -16,7 +16,7 @@ const register = async (userData) => {
 
 // Login user
 const login = async (userData) => {
-	const response = await axios.post(H_URI + 'api/users/login', userData);
+	const response = await axios.post(H_URI + 'login', userData);
 
 	if (response.data) {
 		localStorage.setItem('user', JSON.stringify(response.data));

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL = 'http://localhost:5000/';
-const H_URI = 'https://automatedplayonsapp.herokuapp.com/';
+const H_URI = 'https://automatedplayonsapp.herokuapp.com/api/order/';
 
 // Create new Order
 const createGoal = async (goalData, token) => {
@@ -12,7 +12,7 @@ const createGoal = async (goalData, token) => {
 		},
 	};
 
-	const response = await axios.post(H_URI + 'api/order/', goalData, config);
+	const response = await axios.post(H_URI, goalData, config);
 	console.log(response.data);
 	return response.data;
 };
