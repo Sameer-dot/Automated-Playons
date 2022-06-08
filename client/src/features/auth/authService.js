@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL = 'http://localhost:5000/';
-const H_URI = 'https://automatedplayonsapp.herokuapp.com/api/users/';
+const H_URI = '/api/users/';
 
 // Register user
 const register = async (userData) => {
