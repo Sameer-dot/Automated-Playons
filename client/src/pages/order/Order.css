@@ -1,0 +1,42 @@
+.apps {
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)),
+        url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    background-position: center;
+}
+
+.btnd {
+    padding: 10px 20px;
+    border: 1px solid #003580;
+    border-radius: 5px;
+    background: #003580;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnd svg {
+    margin-right: 8px;
+}
+
+.btnd-reverse {
+    background: #fff;
+    color: #000;
+}
+
+.btnd-block {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.btnd:hover {
+    transform: scale(0.98);
+}

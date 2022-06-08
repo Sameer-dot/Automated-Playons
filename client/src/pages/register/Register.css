@@ -1,0 +1,106 @@
+.app {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)),
+        url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    background-color: transparent;
+    margin: 20px;
+}
+
+.register{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #003580;
+}
+
+.containers {
+    width: 80%;
+    max-width: 580px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.headings {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.headings p {
+    color: #000;
+}
+
+.color{
+    color:#f5b921;
+}
+
+
+.forms,
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.forms-group {
+    margin-bottom: 10px;
+}
+
+.forms-group input,
+.forms-group textarea,
+.forms-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.forms-group label {
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 3px;
+}
+
+.btns {
+    padding: 10px 20px;
+    border: 1px solid #003580;
+    border-radius: 5px;
+    background: #003580;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns svg {
+    margin-right: 8px;
+}
+
+.btns-reverse {
+    background: #fff;
+    color: #000;
+}
+
+.btns-block {
+    width: 100%;
+}
+
+.btns:hover {
+    transform: scale(0.98);
+}

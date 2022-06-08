@@ -1,0 +1,44 @@
+
+.fpItem{
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fpImg{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fpImg:hover{
+  opacity:0.8;
+}
+
+.fpName{
+  color: #333;
+  font-weight: bold;
+}
+
+.fpCity{
+  font-weight: 300;
+}
+
+.fpPrice{
+  font-weight: 500;
+}
+
+.fpMore button{
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.fpMore button:hover{
+  opacity:0.8;
+}

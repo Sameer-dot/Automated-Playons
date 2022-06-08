@@ -1,0 +1,143 @@
+.snavbar {
+  height: 70px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.snav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.snav-logo {
+  color: #f5b921;
+  align-items: center;
+  margin-left: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+
+.snav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  /* margin-right: 2rem; */
+}
+
+.snav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.snav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+
+.snav-item.sactive {
+  color: #ffdd40;
+  border: 1px solid #ffdd40;
+}
+
+/* .snavButton{
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+
+.snavs{
+  color: black;
+  text-decoration: none;
+} */
+
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+} */
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header ul li a:hover {
+  color: gray;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+/* .lls{
+  list-style-type: none;
+} */
+
+
+.btns {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns svg {
+  margin-right: 8px;
+}
+
+.btns-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btns-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btns:hover {
+  transform: scale(0.98);
+}
+

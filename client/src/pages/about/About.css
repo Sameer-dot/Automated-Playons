@@ -1,0 +1,75 @@
+
+.containers {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Backgrounds & Colored Buttons */
+.bg-prim,
+.btn-primary {
+    background-color: #003580;
+    color: #fff;
+}
+
+.bg-light,
+.btn-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Text sizes */
+.lead {
+    font-size: 20px;
+}
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.features-head img {
+    width: 300px;
+    justify-self: flex-end;
+}
+
+.features-sub-head img {
+    width: 500px;
+    justify-self: flex-end;
+}
