@@ -9,7 +9,7 @@ const initialState = {
   message: '',
 }
 
-// Create new goal
+// Create new Order
 export const createGoal = createAsyncThunk(
   'goals/create',
   async (goalData, thunkAPI) => {

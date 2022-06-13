@@ -1,28 +1,39 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Navbar from './../../components/navbar/Navbar';
 import Footer from './../../components/footer/Footer';
 import { FaUser } from 'react-icons/fa';
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import Spinner from '../../components/spinner/Spinner';
+import { reset } from '../../features/goals/goalSlice';
 
 function Profile() {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 
 	const { user } = useSelector((state) => state.auth);
-	const { isLoading, isError, message } = useSelector((state) => state.goals);
+	const { isLoading } = useSelector((state) => state.goals);
+
+	let Name = '';
+	let Email = '';
+	let Password = '';
+
+	// if (!user) {
+	// 	Name = 'name';
+	// 	Email = 'email@gmail.com';
+	// 	Password = 'password';
+	// } else {
+	// 	Name = user.name;
+	// 	Email = user.email;
+	// 	Password = user.password;
+	// }
 
 	useEffect(() => {
-		if (isError) {
-			console.log(message);
-		}
-
 		if (!user) {
 			navigate('/login');
 		}
-	}, [user, navigate, isError, message, dispatch]);
+
+	}, [user, navigate, dispatch]);
 
 	if (isLoading) {
 		return <Spinner />;
@@ -48,7 +59,7 @@ function Profile() {
 									className='forms-control'
 									id='name'
 									name='name'
-									value={user.name}
+									value={Name}
 									placeholder='Name'
 									disabled
 								/>
@@ -59,7 +70,7 @@ function Profile() {
 									className='forms-control'
 									id='email'
 									name='email'
-									value={user.email}
+									value={Email}
 									placeholder='Email'
 									disabled
 								/>
@@ -70,7 +81,7 @@ function Profile() {
 									className='forms-control'
 									id='password'
 									name='password'
-									value={user.password}
+									value={Password}
 									placeholder='Password'
 									disabled
 								/>
