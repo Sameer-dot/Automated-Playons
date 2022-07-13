@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/';
+const API_URL = 'http://localhost:5000/api/order/';
 const H_URI = '/api/order/';
 
 // Create new Order
@@ -12,7 +12,7 @@ const createGoal = async (goalData, token) => {
 		},
 	};
 
-	const response = await axios.post(H_URI, goalData, config);
+	const response = await axios.post(API_URL, goalData, config);
 	console.log(response.data);
 	return response.data;
 };

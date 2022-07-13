@@ -14,7 +14,7 @@ const Order = () => {
 
 	const [Booking, SetBooking] = useState({
 		Name: 'Sameer',
-		Phone: '0312-2123131',
+		Phone: '-',
 		PlayOn: 'Modal Town',
 		Arena: 'MT Playons',
 		Address: 'Modal Town Block-B Street-22',
